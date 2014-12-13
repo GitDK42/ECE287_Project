@@ -657,7 +657,7 @@ module Processor(rst, CLK, regDisplay, proceed, LEDG, out);
 					begin				
 							src2_reg <= src2_reg; 														// R-Type or Branch instruction
 					end
-					else if (cycles == 5'd12 | cycles == 5'd13)
+					else if (cycles == 5'd12 || cycles == 5'd13)
 					begin
 						enALU_reg <= 1'b1;																// enables ALU Register
 					end
